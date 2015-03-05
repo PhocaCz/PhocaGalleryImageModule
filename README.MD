@@ -1,0 +1,1 @@
+Phoca Gallery Image Module is Joomla! CMS extension. Module displaying image/images from Phoca Gallery in module position.
