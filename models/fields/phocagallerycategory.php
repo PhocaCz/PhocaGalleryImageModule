@@ -21,7 +21,7 @@ class JFormFieldPhocaGalleryCategory extends JFormField
 
 	protected function getInput() {
 		
-		$db = &JFactory::getDBO();
+		$db = JFactory::getDBO();
 
        //build the list of categories
 		$query = 'SELECT a.title AS text, a.id AS value, a.parent_id as parentid'

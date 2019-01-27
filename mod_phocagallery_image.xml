@@ -2,41 +2,41 @@
 <extension type="module" client="site" method="upgrade" version="3">
 	<name>mod_phocagallery_image</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>21/07/2013</creationDate>
+	<creationDate>27/01/2019</creationDate>
 	<authorEmail></authorEmail>
-	<authorUrl>www.phoca.cz</authorUrl>
+	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.0</version>
+	<version>4.3.11</version>
 	<description>MOD_PHOCAGALLERY_IMAGE_DESCRIPTION</description>
+	<projectName>PhocaGalleryImageModule</projectName>
 
-	<files>
-		<folder>language</folder>
-		<folder>models</folder>
-		<folder>tmpl</folder>
-		<filename module="mod_phocagallery_image">mod_phocagallery_image.php</filename>
-		<filename>index.html</filename>
-	</files>
-	
 	<media destination="mod_phocagallery_image" folder="media">
-		<filename>index.html</filename>
 		<folder>css</folder>
 		<folder>images</folder>
 		<folder>js</folder>
+		<filename>index.html</filename>
 	</media>
-	
+
+	<files>
+		<folder>models</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_phocagallery_image">index.html</filename>
+		<filename module="mod_phocagallery_image">mod_phocagallery_image.php</filename>
+	</files>
+
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_phocagallery_image.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_phocagallery_image.sys.ini</language>
 	</languages>
 	
-<config>
+	<config>
 		<fields name="params" addfieldpath="/modules/mod_phocagallery_image/models/fields">
 			<fieldset name="basic">
 
 <field name="phocahead1" type="phocahead" default="MOD_PHOCAGALLERY_IMAGE_CONFIG_GENERAL_SETTINGS_LABEL" label="" description=""/>
 		
-<field name="category_id" type="phocagallerycategory" section="com_phocagallery" default="0" label="MOD_PHOCAGALLERY_IMAGE_FIELD_SELECT_CATEGORY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_SELECT_CATEGORY_DESC" multiple="true"  />
+<field name="category_id" type="phocagallerycategory" section="com_phocagallery" default="0" label="MOD_PHOCAGALLERY_IMAGE_FIELD_SELECT_CATEGORY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_SELECT_CATEGORY_DESC" multiple="true"/>
 	
 <field name="image_ordering" type="list" default="1" label="MOD_PHOCAGALLERY_IMAGE_FIELD_IMAGE_ORDERING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_IMAGE_ORDERING_DESC">
 	<option value="1">MOD_PHOCAGALLERY_IMAGE_ORDERING_ASC</option>
@@ -56,9 +56,9 @@
 	<option value="16">MOD_PHOCAGALLERY_IMAGE_HITS_DESC</option>
 </field>
 		
-<field name="limit_start" default="0" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_START_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_START_DESC" />
+<field name="limit_start" default="0" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_START_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_START_DESC"/>
 
-<field name="limit_count" default="1" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_COUNT_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_COUNT_DESC" />
+<field name="limit_count" default="1" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_COUNT_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_LIMIT_COUNT_DESC"/>
 		
 <field name="module_link" type="list" default="0" label="MOD_PHOCAGALLERY_IMAGE_FIELD_LINK_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_LINK_LABEL">
 	<option value="0">MOD_PHOCAGALLERY_IMAGE_LINK_TO_DETAIL_IMAGE</option>
@@ -79,7 +79,7 @@
 	<option value="medium">MOD_PHOCAGALLERY_IMAGE_MEDIUM</option>
 	<option value="large">MOD_PHOCAGALLERY_IMAGE_LARGE</option>
 </field>
-<field name="spacer1" type="spacer" hr="true" />
+<field name="spacer1" type="spacer" hr="true"/>
 
 <field name="font_color" default="#b36b00" size="10" type="color" label="MOD_PHOCAGALLERY_IMAGE_FIELD_FONT_COLOR_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_FONT_COLOR_DESC_DESC"/>
 <!--
@@ -119,24 +119,24 @@
 
 <field name="category_box_space" default="0" size="4" type="phocatext" label="MOD_PHOCAGALLERY_IMAGE_FIELD_CATEGORY_BOX_SPACE_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_CATEGORY_BOX_SPACE_DESC"/>	
 
-<field name="spacer2" type="spacer" hr="true" />		
+<field name="spacer2" type="spacer" hr="true"/>		
 
 		
-<field name="padding_mosaic" default="3" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_FIELD_MOSAIC_PADDING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_MOSAIC_PADDING_DESC" />
+<field name="padding_mosaic" default="3" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_FIELD_MOSAIC_PADDING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_MOSAIC_PADDING_DESC"/>
 		
-<field name="custom_image_width" default="" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_WIDTH_DESC" />
+<field name="custom_image_width" default="" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_WIDTH_DESC"/>
 		
-<field name="custom_image_height" default="" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_HEIGHT_LABEL" description="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_HEIGHT_DESC" />
+<field name="custom_image_height" default="" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_HEIGHT_LABEL" description="MOD_PHOCAGALLERY_IMAGE_C_IMAGE_HEIGHT_DESC"/>
 
-<field name="minimum_box_width" default="" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_MIN_BOX_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_MIN_BOX_WIDTH_DESC" />
+<field name="minimum_box_width" default="" size="4" type="text" label="MOD_PHOCAGALLERY_IMAGE_MIN_BOX_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_MIN_BOX_WIDTH_DESC"/>
 		
-<field name="spacer3" type="spacer" hr="true" />	
+<field name="spacer3" type="spacer" hr="true"/>	
 	
-<field name="phocagallery_module_width" default="" size="10" type="text" label="MOD_PHOCAGALLERY_IMAGE_MODULE_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_MODULE_WIDTH_DESC" />
+<field name="phocagallery_module_width" default="" size="10" type="text" label="MOD_PHOCAGALLERY_IMAGE_MODULE_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_MODULE_WIDTH_DESC"/>
 	
 <field name="phocahead3" type="phocahead" default="MOD_PHOCAGALLERY_IMAGE_CONFIG_DETAIL_SETTINGS_LABEL" label="" description=""/>
 		
-<field name="spacer4" type="spacer" default="MOD_PHOCAGALLERY_IMAGE_DETAIL_WINDOW_WARNING" label="MOD_PHOCAGALLERY_IMAGE_DETAIL_WINDOW_WARNING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_DETAIL_WINDOW_WARNING_DESC" />
+<field name="spacer4" type="spacer" default="MOD_PHOCAGALLERY_IMAGE_DETAIL_WINDOW_WARNING" label="MOD_PHOCAGALLERY_IMAGE_DETAIL_WINDOW_WARNING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_DETAIL_WINDOW_WARNING_DESC"/>
 
 <field name="detail_window" type="list" default="0" label="MOD_PHOCAGALLERY_IMAGE_FIELD_DETAIL_WINDOW_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_DETAIL_WINDOW_DESC_DESC">
 	<option value="1">MOD_PHOCAGALLERY_IMAGE_STANDARD_POPUP_WINDOW</option>
@@ -153,11 +153,11 @@
 	<option value="10">MOD_PHOCAGALLERY_IMAGE_BOXPLUS_IMAGE_ONLY</option>
 </field>
 		
-<field name="spacer5" type="spacer" hr="true" />
+<field name="spacer5" type="spacer" hr="true"/>
 		
 <field name="modal_box_overlay_color" default="#000000" size="10" type="color" label="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_OVERLAY_COLOR_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_OVERLAY_COLOR_DESC"/>
 
-<field name="modal_box_overlay_opacity" default="0.3"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_OVERLAY_OPACITY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_OVERLAY_OPACITY_DESC">
+<field name="modal_box_overlay_opacity" default="0.3" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_OVERLAY_OPACITY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_OVERLAY_OPACITY_DESC">
 	<option value="0">0 %</option>
 	<option value="0.1">10 %</option>
 	<option value="0.2">20 %</option>
@@ -175,9 +175,9 @@
 <field name="modal_box_border_width" default="2" size="10" type="phocatext" label="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_BORDER_WIDTH_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_MODAL_BOX_BORDER_WIDTH_DESC"/>
 
 		
-<field name="spacer6" type="spacer" hr="true" />
+<field name="spacer6" type="spacer" hr="true"/>
 		
-<field name="sb_slideshow_delay" default="5"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_SHADOW_BOX_SLIDESHOW_DELAY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_SHADOW_BOX_SLIDESHOW_DELAY_DESC">
+<field name="sb_slideshow_delay" default="5" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_SHADOW_BOX_SLIDESHOW_DELAY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_SHADOW_BOX_SLIDESHOW_DELAY_DESC">
 	<option value="0">0</option>
 	<option value="1">1</option>
 	<option value="2">2</option>
@@ -191,7 +191,7 @@
 	<option value="10">10</option>
 </field>
 		
-<field name="spacer7" type="spacer" hr="true" />
+<field name="spacer7" type="spacer" hr="true"/>
 		
 <field name="highslide_class" default="rounded-white" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_CLASS_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_CLASS_DESC">
 	<option value="rounded-white">MOD_PHOCAGALLERY_IMAGE_ROUNDED_WHITE</option>
@@ -202,7 +202,7 @@
 	<option value="borderless floating-caption">MOD_PHOCAGALLERY_IMAGE_BORDERLESS_FLOATING_CAPTION</option>
 </field>
 
-<field name="highslide_opacity" default="0"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_OPACITY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_OPACITY_DESC">
+<field name="highslide_opacity" default="0" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_OPACITY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_OPACITY_DESC">
 	<option value="0">0 %</option>
 	<option value="0.1">10 %</option>
 	<option value="0.2">20 %</option>
@@ -221,7 +221,7 @@
 	<option value="none">MOD_PHOCAGALLERY_IMAGE_NONE</option>
 </field>
 		
-<field name="spacer8" type="spacer" hr="true" />
+<field name="spacer8" type="spacer" hr="true"/>
 		
 <field name="highslide_fullimg" default="0" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_FULL_IMAGE_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_FULL_IMAGE_DESC">
 	<option value="0">MOD_PHOCAGALLERY_IMAGE_NO</option>
@@ -233,22 +233,22 @@
 	<option value="1">MOD_PHOCAGALLERY_IMAGE_YES</option>
 </field>
 
-<field name="highslide_slideshow" default="1"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_SLIDESHOW_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_SLIDESHOW_DESC">
+<field name="highslide_slideshow" default="1" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_SLIDESHOW_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_SLIDESHOW_DESC">
 	<option value="0">MOD_PHOCAGALLERY_IMAGE_NO</option>
 	<option value="1">MOD_PHOCAGALLERY_IMAGE_STANDARD</option>
 	<option value="2">MOD_PHOCAGALLERY_IMAGE_SLIDESHOW_WITH_SMALL_THUMBNAILS</option>
 </field>
 		
-<field name="highslide_description" default="1" size="10" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_DESCRIPTION_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_DESCRIPTION_DESC" >
+<field name="highslide_description" default="1" size="10" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_DESCRIPTION_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_HIGHSLIDE_DESCRIPTION_DESC">
 	<option value="1">MOD_PHOCAGALLERY_IMAGE_ONLY_TITLE</option>
 	<option value="2">MOD_PHOCAGALLERY_IMAGE_ONLY_DESCRIPTION</option>
 	<option value="3">MOD_PHOCAGALLERY_IMAGE_ONLY_TITLE_AND_DESCRIPTION</option>
 	<option value="0">MOD_PHOCAGALLERY_IMAGE_NONE</option>
 </field>
 		
-<field name="spacer9" type="spacer" hr="true" />
+<field name="spacer9" type="spacer" hr="true"/>
 
-<field name="jak_slideshow_delay" default="5"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_SLIDESHOW_DELAY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_SLIDESHOW_DELAY_DESC">
+<field name="jak_slideshow_delay" default="5" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_SLIDESHOW_DELAY_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_SLIDESHOW_DELAY_DESC">
 	<option value="1">1</option>
 	<option value="2">2</option>
 	<option value="3">3</option>
@@ -261,15 +261,15 @@
 	<option value="10">10</option>
 </field>
 
-<field name="spacer10" type="spacer" default="MOD_PHOCAGALLERY_IMAGE_JAK_LIGHTBOX_ORIENTATION_WARNING" label="MOD_PHOCAGALLERY_IMAGE_JAK_LIGHTBOX_ORIENTATION_WARNING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_JAK_LIGHTBOX_ORIENTATION_DESC" />
+<field name="spacer10" type="spacer" default="MOD_PHOCAGALLERY_IMAGE_JAK_LIGHTBOX_ORIENTATION_WARNING" label="MOD_PHOCAGALLERY_IMAGE_JAK_LIGHTBOX_ORIENTATION_WARNING_LABEL" description="MOD_PHOCAGALLERY_IMAGE_JAK_LIGHTBOX_ORIENTATION_DESC"/>
 
-<field name="jak_orientation" default="none"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_ORIENTATION_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_ORIENTATION_DESC">
+<field name="jak_orientation" default="none" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_ORIENTATION_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_ORIENTATION_DESC">
 	<option value="vertical">MOD_PHOCAGALLERY_IMAGE_VERTICAL</option>
 	<option value="horizontal">MOD_PHOCAGALLERY_IMAGE_HORIZONTAL</option>
 	<option value="none">MOD_PHOCAGALLERY_IMAGE_NONE</option>
 </field>
 
-<field name="jak_description" default="1"  type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_DESCRIPTION_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_DESCRIPTION_DESC">
+<field name="jak_description" default="1" type="list" label="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_DESCRIPTION_LABEL" description="MOD_PHOCAGALLERY_IMAGE_FIELD_JAK_LIGHTBOX_DESCRIPTION_DESC">
 	<option value="1">MOD_PHOCAGALLERY_IMAGE_ONLY_TITLE</option>
 	<option value="2">MOD_PHOCAGALLERY_IMAGE_ONLY_DESCRIPTION</option>
 	<option value="3">MOD_PHOCAGALLERY_IMAGE_TITLE_AND_DESCRIPTION</option>
@@ -300,27 +300,22 @@
 			
 			<fieldset name="advanced">
 		
-<field
-name="moduleclass_sfx"
-type="text"
-label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
 				
-<field name="module_css_style" type="text" label="MOD_PHOCAGALLERY_IMAGE_CSS_STYLE_LABEL" description="MOD_PHOCAGALLERY_IMAGE_CSS_STYLE_DESC" />
+<field name="module_css_style" type="text" label="MOD_PHOCAGALLERY_IMAGE_CSS_STYLE_LABEL" description="MOD_PHOCAGALLERY_IMAGE_CSS_STYLE_DESC"/>
 				
-<field
-name="cache"
-type="list"
-default="0"
-label="COM_MODULES_FIELD_CACHING_LABEL"
-description="COM_MODULES_FIELD_CACHING_DESC">
-<option
-	value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
 </field>
+
+<field name="alternative_layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC"/>
 
 		
 			</fieldset>
 		</fields>
 	</config>
-</extension>
 
+	<updateservers>
+		<server type="extension" name="MOD_PHOCAGALLERY_IMAGE"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaGalleryImageModule/master/manifest.xml]]></server>
+	</updateservers>
+</extension>
