@@ -9,6 +9,8 @@
 	"description": "Phoca Gallery Image Module is a Joomla! module which display image(s) from Phoca Gallery component in module positon. Random image or latest images can be displayed with help of this module.",
 	"projectUrl": "https://www.phoca.cz/phocagallery-image",
 	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/11-phoca-gallery-image-module",
+	"projectMainComponent": "Phoca Gallery",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocagallery-joomla-gallery",
 	"projectDemo" : {
 		"Joomla! 1.5 Demo": "https://www.phoca.cz/demo/"
 	},

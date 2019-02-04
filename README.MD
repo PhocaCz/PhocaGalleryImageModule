@@ -16,6 +16,8 @@ Phoca Gallery Image Module is a Joomla! module which display image(s) from Phoca
 
 [Phoca Gallery Image Module](https://www.phoca.cz/phocagallery-image)
 
+[Phoca Gallery Info Page](https://www.phoca.cz/project/phocagallery-joomla-gallery)
+
 
 
 ## Documentation
