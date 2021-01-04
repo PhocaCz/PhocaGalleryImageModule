@@ -4,10 +4,10 @@
 		<description><![CDATA[ Phoca Gallery Image Module is a Joomla! module which display image(s) from Phoca Gallery component in module positon. Random image or latest images can be displayed with help of this module. ]]></description>
 		<element>mod_phocagallery_image</element>
 		<type>module</type>
-		<version>4.3.11</version>
-		<infourl title="Phoca Gallery Image Module 4.3.11">https://www.phoca.cz/</infourl>
+		<version>4.4.0</version>
+		<infourl title="Phoca Gallery Image Module 4.4.0">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaGalleryImageModule/releases/download/4.3.11/mod_phocagallery_image_v4.3.11.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaGalleryImageModule/releases/download/4.4.0/mod_phocagallery_image_v4.4.0.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
@@ -16,6 +16,6 @@
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.9"/>
-		<client>0</client>
+		<client>site</client>
 	</update>
 </updates>

@@ -2,7 +2,7 @@
 
 
 
-![Phoca Gallery Image Module](https://github.com/PhocaCz/PhocaGalleryImageModule/blob/master/mod_phocagallery_image.png)
+![Phoca Gallery Image Module](https://github.com/PhocaCz/PhocaGalleryImageModule/blob/master/mod_phocagallery_image.png?raw=true)
 
 # Phoca Gallery Image Module
 
@@ -23,6 +23,8 @@ Phoca Gallery Image Module is a Joomla! module which display image(s) from Phoca
 ## Documentation
 
 [Documentation](https://www.phoca.cz/documentation/category/11-phoca-gallery-image-module)
+
+
 
 
 
@@ -52,7 +54,7 @@ Phoca Gallery Image Module is a Joomla! module which display image(s) from Phoca
 
 ## Version
 
-4.3.11
+4.4.0
 
 
 
